@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<link rel="stylesheet" href="style.css">
+<body>
+    
+    <img src="body1.jpg" class="img1" alt="" >
+    <img src="Shape1.png" alt="">
+
+    <button onclick="toggleImage()">Hide Image</button>
+    
+    <img src="doors and windows.png" alt="" class="img2" id="img2">
+    <div class="ground"></div>
+    
+    <img src="the light.png" class="the-light" alt="">
+    <img src="light brightness.png" class="light-brightness" alt="" id="light-brightness">
+    <button class="btn1" onclick="toggleLight()"></button>
+    <!--
+    <img src="window1.png" class="window1" alt="">
+    <img src="window2.png" class="window2" alt="" id="img">
+    <img src="window3.png" class="window3" alt="">
+    <img src="door1.png" class="door1" alt="">
+    <img src="door2.png" class="door2" alt=""> 
+    <img src="door3.png" class="door3" alt="">
+   
+-->
+    <script>
+        function toggleImage() {
+            var img = document.getElementById('img2');  // Select the image by its ID
+            
+            // Toggle between 'none' and 'block' for display property
+            if (img.style.display === 'none') {
+                img.style.display = 'block';  // Show the image
+            } else {
+                img.style.display = 'none';   // Hide the image
+            }
+        }
+        function toggleLight() {
+            var img = document.getElementById('light-brightness');  // Select the image by its ID
+            
+            // Toggle between 'none' and 'block' for display property
+            if (img.style.display === 'none') {
+                img.style.display = 'block';  // Show the image
+            } else {
+                img.style.display = 'none';   // Hide the image
+            }
+        }
+    </script>
+    
+    
+    
+
+
+
+
+
+    
+</body>
+</html>
